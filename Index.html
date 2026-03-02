@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<style>
+    body{
+        font-family: "Roboto";
+        line-height: 1.5;
+        padding: 20px;
+        margin: auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+    }
+    fieldset{
+        border: 1px solid rgb(221, 221, 221);
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+
+    }
+    legend{
+        font-weight: bold;
+        padding: 0 10px;
+        color:brown;
+        
+    }
+    label{
+        display: block;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+    input[type="text"], input[type="email"], input[type="password"], input[type="tel"] ,input[type="date"] , select,textarea{
+        width: 100%;
+        padding: 8px; 
+        margin-top: 5px;
+        border:1px solid blue;
+        border-radius: 4px; box-sizing: border-box;
+    }
+    label[ for="male" ] {
+        display: inline;
+    }
+
+    label[for="female"] {
+        display: inline;
+    }
+
+
+label[for="other"] {
+     display: inline;
+}
+
+label[for="Hostel Accomadation"] {
+    display: inline;
+}
+label[ for="24/7 Libary"] {
+    display: inline;
+}
+ button{
+    border-radius: 5px;
+}
+</style>
+</head>
+<body style="font-family: Roboto, sans-serif; line-height: 1.5; padding: 20px; background-color: white;">
+    
+    <header>
+        <h1>Student Registration Form</h1>
+        <h4>Please fill out the form below to register for the upcoming semester.</h4>
+        <nav></nav>
+    </header>
+
+    <br>
+    <main>
+        <section>
+        <form action="#">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name"> <h3>Full Name</h3></label>
+                <input type="text" id="full-name" name="Student_name" 
+                 placeholder="e.g. John Doe"style="width: 100%;" required/> 
+                 <br>
+                 <label for="email-addr"><h3>Email Address</h3></label>
+                <input type="text" placeholder="john@example.com" style="width: 100%;">
+                <label><h3>Password</h3></label>
+                <input type="password" id="pass" name="Student_password" style="width: 100%;">
+                <h3>Phone Number</h3>
+                <input type="number" placeholder="123-456-7890" style="width: 100%;">
+              <label><h3>Date of Birth</h3></label>
+                <input type="date" id="dob" style="width: 100%;">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Academic Prefences</legend>
+               <label><h3>Gender</h3></label>
+               <input type="radio"><label for="male">Male</label>
+                <input type="radio"><label for="female">Female</label>
+                <input type="radio"><label for="other">Other</label>
+
+               <label for="course-select"><h3>Desired Course</h3></label>
+                <select id="course-select" name="Course" required>
+                    <option value="" selected>Please Choose a Course</option>
+                    <option value="">Medcine</option>
+                    <option value="">Bio Chemistry</option>
+                    <option value="">Accounting</option><br>
+                </select>
+                    <br>
+                    <label><h3>Campus Facilities Needed</h3></label>
+                    <input type="checkbox"><Hostel for="Hostel Accomodation">Hostel Accomodation</label>
+                    <input type="checkbox"><label for="24/7 Libary">24/7 Libary</label>
+                    
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Additional Details</legend>
+                <h3>Why do you want to join this campus?</h3>
+                <input type="text" placeholder="Tell me about your goals"  style="width:100% ;height: 80px;;">
+            </fieldset>
+            <br> 
+           <label for="button"></label>
+  <button style="background-color: green; width: 100%; color: white; border: none; padding: 4px;" >Submit Application</button>
+        
+        </form>
+        </section>
+    </main>
+</body>
+</html>
